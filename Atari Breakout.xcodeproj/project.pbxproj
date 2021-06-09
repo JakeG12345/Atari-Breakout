@@ -11,6 +11,10 @@
 		1FC4C94D26707C480080A9B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC4C94C26707C480080A9B1 /* ContentView.swift */; };
 		1FC4C94F26707C4C0080A9B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FC4C94E26707C4C0080A9B1 /* Assets.xcassets */; };
 		1FC4C95226707C4C0080A9B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FC4C95126707C4C0080A9B1 /* Preview Assets.xcassets */; };
+		1FC4C95F26709D020080A9B1 /* Breakout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC4C95E26709D020080A9B1 /* Breakout.swift */; };
+		1FC4C96326709D7D0080A9B1 /* breakout.json in Resources */ = {isa = PBXBuildFile; fileRef = 1FC4C96226709D7D0080A9B1 /* breakout.json */; };
+		1FC4C96B26709E330080A9B1 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC4C96A26709E330080A9B1 /* DataService.swift */; };
+		1FC4C96F26709FD30080A9B1 /* BreakoutModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC4C96E26709FD30080A9B1 /* BreakoutModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		1FC4C94E26707C4C0080A9B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1FC4C95126707C4C0080A9B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1FC4C95326707C4C0080A9B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FC4C95E26709D020080A9B1 /* Breakout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breakout.swift; sourceTree = "<group>"; };
+		1FC4C96226709D7D0080A9B1 /* breakout.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = breakout.json; sourceTree = "<group>"; };
+		1FC4C96A26709E330080A9B1 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		1FC4C96E26709FD30080A9B1 /* BreakoutModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakoutModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +61,11 @@
 			isa = PBXGroup;
 			children = (
 				1FC4C94A26707C480080A9B1 /* Atari_BreakoutApp.swift */,
-				1FC4C94C26707C480080A9B1 /* ContentView.swift */,
+				1FC4C95A26707C5A0080A9B1 /* View */,
+				1FC4C95D26709BB50080A9B1 /* ViewModel */,
+				1FC4C95C26709B8D0080A9B1 /* Model */,
+				1FC4C96826709DD80080A9B1 /* Services */,
+				1FC4C96926709DED0080A9B1 /* Data */,
 				1FC4C94E26707C4C0080A9B1 /* Assets.xcassets */,
 				1FC4C95326707C4C0080A9B1 /* Info.plist */,
 				1FC4C95026707C4C0080A9B1 /* Preview Content */,
@@ -67,6 +79,46 @@
 				1FC4C95126707C4C0080A9B1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1FC4C95A26707C5A0080A9B1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1FC4C94C26707C480080A9B1 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1FC4C95C26709B8D0080A9B1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1FC4C95E26709D020080A9B1 /* Breakout.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1FC4C95D26709BB50080A9B1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1FC4C96E26709FD30080A9B1 /* BreakoutModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1FC4C96826709DD80080A9B1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1FC4C96A26709E330080A9B1 /* DataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		1FC4C96926709DED0080A9B1 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1FC4C96226709D7D0080A9B1 /* breakout.json */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +178,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FC4C96326709D7D0080A9B1 /* breakout.json in Resources */,
 				1FC4C95226707C4C0080A9B1 /* Preview Assets.xcassets in Resources */,
 				1FC4C94F26707C4C0080A9B1 /* Assets.xcassets in Resources */,
 			);
@@ -139,7 +192,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FC4C94D26707C480080A9B1 /* ContentView.swift in Sources */,
+				1FC4C95F26709D020080A9B1 /* Breakout.swift in Sources */,
 				1FC4C94B26707C480080A9B1 /* Atari_BreakoutApp.swift in Sources */,
+				1FC4C96F26709FD30080A9B1 /* BreakoutModel.swift in Sources */,
+				1FC4C96B26709E330080A9B1 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
